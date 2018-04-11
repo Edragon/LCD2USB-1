@@ -53,7 +53,7 @@ void pwm_init(void) {
 
     /* write magic "eeprom is valid" marker 0x42 and default values */
     eeprom_write_byte(&eeprom_valid, 0x42);
-    eeprom_write_byte(&eeprom_contrast, 0xff);
+    eeprom_write_byte(&eeprom_contrast, 0xA0);
     eeprom_write_byte(&eeprom_brightness, 0xff);
   }
 
